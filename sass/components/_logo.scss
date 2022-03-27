@@ -1,0 +1,27 @@
+.logo {
+	display: block;
+	padding-top: 24px;
+	padding-bottom: 25px;
+
+	color: $conditions-color;
+	text-decoration: none;
+	font-family: Raleway;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 1.19;
+	
+	cursor: default;
+	
+	@media screen and (max-width: 480px) {
+		margin-right: auto;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-right: 93px;
+	}
+	
+}
+
+.logo__studio {
+	color: $headers-color;
+}
