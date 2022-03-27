@@ -19,6 +19,11 @@
       <!-- навигация -->
       <nav class="nav">
         <a href="./index.html" class="logo">Web<span class="logo__studio">Studio</span></a>
+        <button type="button" class="button-menu" data-menu-button>
+          <svg class="button-menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-opt"></use>
+          </svg>
+        </button>
         <ul class="site-nav">
           <li class="site-nav__item">
             <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
@@ -52,6 +57,60 @@
         </li>
       </ul>
     </div>
+
+    <!-- модалка меню -->
+
+    <div class="backdrop is-open" data-menu>
+      <div class="modal">
+        <button type="button" class="button-close" data-menu-button>
+          <svg class="button-close__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-close-cross-opt"></use>
+          </svg>
+        </button>
+        <nav class="navigation">
+          <ul class="modal-nav">
+            <li class="modal-nav__item">
+              <a href="./index.html" class="modal-nav__link modal-nav__link--current">Студия</a>
+            </li>
+            <li class="modal-nav__item">
+              <a href="./portfolio.html" class="modal-nav__link">Портфолио</a>
+            </li>
+            <li class="modal-nav__item">
+              <a href="" class="modal-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        
+        <!-- контакты в модалке меню -->
+        <ul class="modal-contacts">
+          <li class="modal-contacts__item" lang="en">
+            <a href="mailto:info@devstudio.com" class="modal-contacts__mail">
+              <span>info@devstudio.com</span>
+            </a>
+          </li>
+          <li class="modal-contacts__item">
+            <a href="tel:+380961111111" class="modal-contacts__tel">
+              <span>+38 096 111 11 11</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="modal-links">
+          <li class="modal-links__link">
+            <a href="#" class="modal-link__name">Instagram</a>
+          </li>
+          <li class="modal-links__link">
+            <a href="#" class="modal-link__name">Twitter</a>
+          </li>
+          <li class="modal-links__link">
+            <a href="#" class="modal-link__name">Facebook</a>
+          </li>
+          <li class="modal-links__link">
+            <a href="#" class="modal-link__name">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
   </header>
 
   <!-- main container -->
@@ -482,7 +541,9 @@
 
     </div>
   </div>
+  
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
