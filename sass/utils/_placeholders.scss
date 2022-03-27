@@ -1,0 +1,79 @@
+%container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+
+%section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+
+%link {
+	text-decoration: none;
+	font-style:normal;
+	color: $text-color;
+}
+
+
+%button {
+	display: inline-block;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-family: inherit;
+	padding: 0;
+	color: $headers-color;
+	&:hover,
+	&:focus {
+	color: $conditions-subcolor;
+	background-color: $conditions-color;
+	}	
+}
+
+%visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+
+%title {
+	color: $headers-color;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+%list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+%no-gap {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+%section-title {
+	margin-bottom: 50px;
+	
+	font-size: 36px;
+	line-height: 1.17;
+}
+
+%flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

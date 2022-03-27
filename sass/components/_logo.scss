@@ -1,0 +1,19 @@
+.logo {
+	display: block;
+	padding-top: 24px;
+	padding-bottom: 25px;
+	margin-right: 93px;
+
+	color: $conditions-color;
+	text-decoration: none;
+	font-family: Raleway;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 1.19;
+	
+	cursor: default;
+}
+
+.logo__studio {
+	color: $headers-color;
+}

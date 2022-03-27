@@ -1,0 +1,52 @@
+.our-occupations {
+	@extend %section;
+}
+
+.occupations {
+    @extend %container;
+    text-align: center;
+}
+
+.occupations__title {
+    @extend %title;
+	@extend %section-title;
+}
+
+.occupations__list {
+	display: flex;
+    @extend %list;
+}
+
+.occupation__image {
+    @extend %no-gap;
+}
+
+.occupation {
+    position: relative;
+
+	flex-basis: calc(100%/3);
+	text-align: center;
+
+    
+    &:not(:last-child){
+	margin-right: 30px;
+    }
+}
+
+.occupation__description {
+	position: absolute;
+	bottom: 0;
+	width:100%;
+	min-height: 70px;
+
+	@extend %flex;
+
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	background-color: rgba(47, 48, 58, 0.8);
+	color: $conditions-subcolor;
+}

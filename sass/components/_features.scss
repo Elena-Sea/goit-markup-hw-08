@@ -1,0 +1,55 @@
+/* features */
+
+.our-features {
+    @extend %section;
+	padding-bottom: 0;
+}
+
+.features {
+	@extend %container;
+    &__title {
+        @extend %visually-hidden;
+    }
+}
+
+.features-list {
+    display: flex;
+    @extend %list;
+}
+
+.feature-item.title {
+	margin-bottom: 10px;
+    @extend %title;
+}
+
+.feature-card {
+	flex-basis: calc(100%/4);
+    &:not(:last-child){
+	margin-right: 30px;
+	}	
+}
+
+.feature-card__icon {
+	
+	@extend %flex;
+
+	width: 270px;
+	height: 120px;
+	margin-bottom: 30px;
+
+	border-radius: 4px;
+	background-color: $background-color-blocks;
+} 
+
+.feature-card__title {
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+
+    @extend %title;
+}
+
+.feature-card__description {
+	line-height: 1.71;
+	font-weight: 400;
+}
