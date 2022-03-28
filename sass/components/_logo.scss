@@ -1,16 +1,8 @@
-// .logo {
-// 	display: block;
-// }
-
-
-
 
 .logo {
 	display: block;
 	padding-top: 16px;
 	padding-bottom: 16px;
-
-	@extend %link;
 
 	color: $conditions-color;
 	font-family: Raleway;

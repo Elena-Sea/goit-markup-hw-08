@@ -21,8 +21,6 @@
 }
 
 .modal-nav {
-	@extend %list;
-
     margin-bottom: 286px;
 }
 
@@ -36,8 +34,6 @@
     padding-top: 16px;
 	padding-bottom: 16px;
 	
-    @extend %link;
-
 	color: $headers-color;
     font-size: 40px;
 	font-weight: 500;
@@ -61,7 +57,6 @@
    
     margin-bottom: 64px;
 
-    @extend %list;
     &__item:first-child {
         margin-bottom: 32px;
     }
@@ -70,7 +65,6 @@
     &__tel {
         display: block;
 
-        @extend %link;
     }
     &__mail {
         font-size: 24px;
@@ -84,7 +78,6 @@
 
 
 .modal-links {
-    @extend %list;
    
     display: flex;
 }
@@ -101,7 +94,6 @@
 }
 .modal-links__name {
     display: block;
-    @extend %link;
 
     font-size: 18px;
     font-weight: 500;

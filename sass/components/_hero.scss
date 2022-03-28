@@ -1,4 +1,4 @@
-.hero {
+.section--with-bkgd  {
 	max-width: 480px;
 	min-height: 400px;
 	margin-left: auto;
@@ -28,14 +28,7 @@
   }
 }
 
-
-
-.hero-order {
-    @extend %container;
-}
-
-
-.hero-order__title {
+.container__title--for-hero {
 	margin-top: 0;
 	margin-bottom: 30px;
 

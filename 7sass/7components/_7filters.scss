@@ -1,18 +1,9 @@
-.portfolio {
-    @extend %section;
-}
-
-.filters {
-    @extend %container;
-}
-
 .filters__title {
     @extend %visually-hidden
 }
 
 .filter-buttons {
     margin-bottom: 50px;
-    @extend %list;
     @extend %flex;
 }
 

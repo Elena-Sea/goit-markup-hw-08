@@ -1,23 +1,18 @@
 /* features */
 
-.our-features {
-    @extend %section;
+.section--no-bottom-marg {
 	padding-bottom: 0;
 }
 
-.features {
-	@extend %container;
-    &__title {
-        @extend %visually-hidden;
-    }
+.container__title--hidden {
+    @extend %visually-hidden;
 }
 
 .features-list {
     display: flex;
-    @extend %list;
 }
 
-.feature-item.title {
+.feature-card__title {
 	margin-bottom: 10px;
     @extend %title;
 }
@@ -29,7 +24,7 @@
 	}	
 }
 
-.feature-card__icon {
+.feature-card__box {
 	
 	@extend %flex;
 

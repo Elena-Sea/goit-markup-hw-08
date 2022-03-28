@@ -1,27 +1,11 @@
 
-.our-team {
+.section--another-bkgd {
 	background-color: $background-color-blocks;
-
-	@extend %section;
 }
 
-.team{
-	text-align: center;
-	@extend %container;
-}
-
-.team__title{
-	margin-bottom: 50px;
-	
-	font-size: 36px;
-	line-height: 1.17;
-
-	@extend %title;
-}
 
 .team-members {
 	display: flex;
-	@extend %list;
 }
 
 .member__image {

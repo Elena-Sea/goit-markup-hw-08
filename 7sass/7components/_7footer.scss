@@ -12,11 +12,9 @@
 
 // контакты в футере
 
-.footer-content {
+.container--flex-base {
 	display: flex;
 	align-items: baseline;
-
-    @extend %container;
 }
 
 .footer {
@@ -30,22 +28,16 @@
 	margin-right: 85px;
 }
 
-.address {
-    @extend %list;
-}
 
 .address__item:not(:last-child){
 	margin-bottom: 9px;
 }
 
 .address__contact {
-    @extend %link;
-
 	color: rgba(255, 255, 255, 0.6);
 }
 
 .address__link {
-    @extend %link;
 	color: $conditions-subcolor;
 }
 

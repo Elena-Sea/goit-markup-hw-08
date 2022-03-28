@@ -1,4 +1,5 @@
-.submit-button{
+.submit-button,
+.button-order{
     @extend %button;
    
     width: 200px;
