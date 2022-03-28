@@ -1,23 +1,18 @@
-.portfolio {
-    @extend %section;
-}
-
-.filters {
-    @extend %container;
-}
-
-.filters__title {
+.container__title--hidden {
     @extend %visually-hidden
 }
 
 .filter-buttons {
-    margin-bottom: 50px;
-    @extend %list;
-    @extend %flex;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.filter:not(:last-child){
+.filter {
+    margin-bottom: 15px;
+    &:not(:last-child){
 	margin-right: 8px;
+    }
 }
 
 .filter__button {

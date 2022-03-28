@@ -1,22 +1,10 @@
-.our-occupations {
-	@extend %section;
-}
+// .occupations__list {
+// 	display: flex;
+// }
 
-.occupations {
-    @extend %container;
-    text-align: center;
+.section--occup-hidden {
+	display: none;
 }
-
-.occupations__title {
-    @extend %title;
-	@extend %section-title;
-}
-
-.occupations__list {
-	display: flex;
-    @extend %list;
-}
-
 .occupation__image {
     @extend %no-gap;
 }
@@ -24,12 +12,12 @@
 .occupation {
     position: relative;
 
-	flex-basis: calc(100%/3);
+	// flex-basis: calc(100%/3);
 	text-align: center;
 
     
     &:not(:last-child){
-	margin-right: 30px;
+	margin-bottom: 30px;
     }
 }
 

@@ -1,28 +1,12 @@
 
-.our-team {
+.section--another-bkgd {
 	background-color: $background-color-blocks;
-
-	@extend %section;
 }
 
-.team{
-	text-align: center;
-	@extend %container;
-}
-
-.team__title{
-	margin-bottom: 50px;
-	
-	font-size: 36px;
-	line-height: 1.17;
-
-	@extend %title;
-}
-
-.team-members {
-	display: flex;
-	@extend %list;
-}
+// .team-members {
+// 	display: flex;
+// 	@extend %list;
+// }
 
 .member__image {
 	@extend %no-gap;
@@ -34,13 +18,13 @@
 	border-radius: 0px 0px 4px 4px;
 
 	&:not(:last-child){
-	margin-right: 30px;
+	margin-bottom: 30px;
 	}
 }
 
 .member__description {
 	padding-top: 30px;
-	padding-bottom: 30px;	
+	padding-bottom: 24px;	
 }
 
 .member__name {

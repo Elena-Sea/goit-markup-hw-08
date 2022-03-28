@@ -1,42 +1,32 @@
-.our-clients {
-    @extend %section;
-}
-
-.clients__title {
-	margin-bottom: 50px;
-	
-	font-size: 36px;
-	line-height: 1.17;
-    @extend %title;
-}
-
-.clients {
-	text-align: center;
-    @extend %container;
-}
-
 .clients-list {
-	@extend %flex;
-	@extend %list;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: -30px;
+	margin-right: -30px;
+	// max-width: 450px;
 }
 
 .client {
 	@extend %flex;
+	flex-basis: calc(100%/2-30px);
+	margin-top: 30px;
+	margin-right: 30px;
 
 	box-sizing: border-box;
-	width: 170px;
-	height: 92px;
+	// width: 210px;
+	// height: 92px;
 
-    &:not(:last-child) {
-	margin-right: 30px;
-    }
+    // &:not(:last-child) {
+	// margin-right: 30px;
+    // }
 }
 
 .client__link{
 	display: flex;
-	padding: 16px 32px;
+	padding: 16px 52px;
 
-    @extend %link;
+	width: 210px;
+	height: 92px;
 	
 	color: $link-icon-fill;
 	border: 1px solid $link-icon-fill;

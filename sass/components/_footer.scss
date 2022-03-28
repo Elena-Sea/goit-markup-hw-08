@@ -11,27 +11,29 @@
 
 
 // контакты в футере
-
-.footer-content {
+.container--flex-base {
 	display: flex;
-	align-items: baseline;
-
-    @extend %container;
+	flex-direction: column;
+	align-items: center;
 }
 
+// .footer-content {
+// 	display: flex;
+// 	align-items: baseline;
+
+// }
+
 .footer {
-	padding-top: 60px;
-	padding-bottom: 60px;
-	
 	background-color: $background-color-dark;
 }
 
 .footer-contacts {
-	margin-right: 85px;
+	text-align: center;
+	// margin-right: 85px;
 }
 
 .address {
-    @extend %list;
+	margin-bottom: 60px;
 }
 
 .address__item:not(:last-child){
@@ -39,13 +41,11 @@
 }
 
 .address__contact {
-    @extend %link;
 
 	color: rgba(255, 255, 255, 0.6);
 }
 
 .address__link {
-    @extend %link;
 	color: $conditions-subcolor;
 }
 
@@ -53,7 +53,9 @@
 // блок присоединяйтесь
 
 .join {
-	margin-right: 93px;
+text-align: center;
+margin-bottom: 60px;
+	// margin-right: 93px;
 }
 
 .join__btn,
@@ -77,15 +79,17 @@
 // форма подписки
 
 .subscribe {
-    display: flex;
-    align-items: flex-end;
 
+    display: flex;
+	flex-direction: column;
+	text-align: center;
 }
 
 .subscribe-box__input {
 	width: 358px;
 	height: 50px;
-	margin-right: 12px;
+	// margin-right: 12px;
+	margin-bottom: 20px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	padding-left: 16px;
@@ -110,9 +114,14 @@
 .subscribe-box {
 	display: flex;
     flex-direction: column;
+	align-items: center;
 
 }
 
+.submit-button--subscribe {
+	margin-right: auto;
+	margin-left: auto;
+}
 
 .submit-button__icon {
 	fill: $link-icon-revfill;
