@@ -20,8 +20,8 @@
 	justify-content: flex-end;
 	align-items: flex-start; */
 	padding: 40px;
-	width: 528px;
-	height: 581px;
+	width: 450px;
+	height: 609px;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%) scale(1);
@@ -60,6 +60,7 @@
     &:focus  {
 	fill: $conditions-color;
     }
+	cursor: pointer;
 }
 
 
