@@ -1,10 +1,7 @@
 .container--flex {
+	position:relative;
     display: flex;
 	align-items: center;
-}
-
-.header {
-	position:relative;
 }
 
 .nav {
