@@ -1,3 +1,9 @@
+// .container--flex {
+//     display: flex;
+// 	align-items: center;
+// }
+
+
 .header {
 	position:relative;
 }
@@ -16,12 +22,12 @@
 	align-items: center;
 	justify-content: space-between;
 
-	@media screen and (max-width: 480px) {
-		max-width: 480px;
-	}
-	@media screen and (min-width: 768px) {
-		margin-right: auto;
-	}
+	// @media screen and (max-width: 480px) {
+	// 	max-width: 480px;
+	// }
+	// @media screen and (min-width: 768px) {
+	// 	margin-right: auto;
+	// }
 }
 
 
@@ -35,9 +41,9 @@
 	@media  screen and (max-width: 480px) {
 		display: none;
 	}
-	@media  screen and (min-width: 768px) {
-		display: flex;
-	}
+	// @media  screen and (min-width: 768px) {
+	// 	display: flex;
+	// }
 }
 
 .contacts {
@@ -89,10 +95,7 @@
 }
 
 
-// .container--flex {
-//     display: flex;
-// 	align-items: center;
-// }
+
 
 // .nav {
 // 	display: flex;

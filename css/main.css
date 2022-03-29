@@ -421,16 +421,6 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media screen and (max-width: 480px) {
-  .nav {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .nav {
-    margin-right: auto;
-  }
-}
 
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
@@ -439,13 +429,6 @@ a {
 @media screen and (max-width: 480px) {
   .site-nav {
     display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .site-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 
@@ -828,7 +811,7 @@ a {
 }
 .client__link {
   display: block;
-  padding: 16px 52px;
+  padding: 16px 50px;
   color: #AFB1B8;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
