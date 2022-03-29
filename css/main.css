@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 .filter__button, .submit-button,
 .button-order {
@@ -1117,7 +1116,6 @@ a {
   letter-spacing: 0.06em;
 }
 
-/* Модальное окно */
 .backdrop {
   position: fixed;
   top: 0;
@@ -1132,17 +1130,23 @@ a {
 
 .modal {
   position: absolute;
+  left: 50%;
+  top: 50%;
   padding: 40px;
   width: 450px;
   height: 609px;
-  left: 50%;
-  top: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   background-color: #FFFFFF;
+  border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -1196,6 +1200,11 @@ a {
   letter-spacing: 0.03em;
   color: #212121;
 }
+@media screen and (min-width: 1200px) {
+  .form-modal__title {
+    line-height: 1.15;
+  }
+}
 
 .form-field {
   position: relative;
@@ -1225,6 +1234,12 @@ a {
   width: 370px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .form-field__input,
+.textarea__box {
+    width: 448px;
+  }
 }
 
 .form-field__input {
@@ -1327,7 +1342,6 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px;
-  width: 370px;
 }
 
 .form-field__checkbox {
@@ -1339,6 +1353,7 @@ a {
 
 .form-field__checkbox-link {
   color: #2196F3;
+  text-decoration: underline;
 }
 
 .form-field__icon-policy {
@@ -1366,6 +1381,12 @@ a {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .check-policy {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .filter-buttons {
