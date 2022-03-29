@@ -766,6 +766,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .section--no-bottom-marg {
+    padding-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-list {
     margin-top: -30px;
@@ -837,16 +843,26 @@ a {
   font-weight: 400;
 }
 
-.section--occup-hidden {
-  display: none;
+@media screen and (max-width: 767px) {
+  .section--occup-hidden {
+    display: none;
+  }
+}
+
+.occupations__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .occupation {
   position: relative;
+  -ms-flex-preferred-size: 33.3333333333%;
+      flex-basis: 33.3333333333%;
   text-align: center;
 }
 .occupation:not(:last-child) {
-  margin-bottom: 30px;
+  margin-right: 30px;
 }
 
 .occupation__description {

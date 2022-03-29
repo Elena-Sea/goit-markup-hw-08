@@ -1,10 +1,13 @@
-// .occupations__list {
-// 	display: flex;
-// }
-
 .section--occup-hidden {
-	display: none;
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
 }
+
+.occupations__list {
+	display: flex;
+}
+
 .occupation__image {
     @extend %no-gap;
 }
@@ -12,12 +15,12 @@
 .occupation {
     position: relative;
 
-	// flex-basis: calc(100%/3);
+	flex-basis: calc(100%/3);
 	text-align: center;
 
     
     &:not(:last-child){
-	margin-bottom: 30px;
+	margin-right: 30px;
     }
 }
 
