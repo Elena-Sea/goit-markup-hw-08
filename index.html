@@ -176,7 +176,7 @@
               </div>
               <div class="feature-card__thumb">
                 <h3 class="feature-card__title">Современные технологии</h3>
-                <p class="feature-card__description">ИЗначимость этих проблем настолько очевидна, что реализация плановых
+                <p class="feature-card__description">Значимость этих проблем настолько очевидна, что реализация плановых
                   заданий.</p>
               </div>
             </li>
@@ -218,7 +218,12 @@
           <h2 class="container__title">Наша команда</h2>
           <ul class="team-members">
             <li class="member">
-              <img class="member__image" src="./images/idem-opt-450.jpeg" alt="Игорь Демьяненко фото" width="450" />
+              <picture>
+                <source
+                srcset="./images/idem-opt-450.jpeg 1x, ./images/idem-opt-450@2x.jpeg 2x"
+                media="(max-width: 767px)" />
+                <img class="member__image" src="./images/idem-opt-450@2x.jpeg" alt="Игорь Демьяненко фото" />
+              </picture>
               <div class="member__description">
                 <h3 lang="ru" class="member__name">Игорь Демьяненко</h3>
                 <p lang="en" class="member__area">Product Designer</p>
@@ -255,7 +260,10 @@
               </div>
             </li>
             <li class="member">
-              <img class="member__image" src="./images/orep-opt-450.jpeg" alt="Ольга Репина фото" width="450" />
+              <picture>
+                <source srcset="./images/orep-opt-450.jpeg 1x, ./images/orep-opt-450@2x.jpeg 2x" media="(max-width: 767px)" />
+                <img class="member__image" src="./images/orep-opt-450.jpeg" alt="Ольга Репина фото" />
+              </picture>
               <div class="member__description">
                 <h3 lang="ru" class="member__name">Ольга Репина</h3>
                 <p lang="en" class="member__area">Frontend Developer</p>
@@ -292,7 +300,10 @@
               </div>
             </li>
             <li class="member">
-              <img class="member__image" src="./images/ntar-opt-450.jpeg" alt="Николай Тарасов фото" width="450" />
+              <picture>
+                <source srcset="./images/ntar-opt-450.jpeg 1x, ./images/ntar-opt-450@2x.jpeg 2x" media="(max-width: 767px)" />
+                <img class="member__image" src="./images/ntar-opt-450.jpeg" alt="Николай Тарасов фото" />
+              </picture>
               <div class="member__description">
                 <h3 lang="ru" class="member__name">Николай Тарасов</h3>
                 <p lang="en" class="member__area">Marketing</p>
@@ -329,7 +340,10 @@
               </div>
             </li>
             <li class="member">
-              <img class="member__image" src="./images/merm-opt-450.jpeg" alt="Михаил Ермаков фото" width="450" />
+              <picture>
+                <source srcset="./images/merm-opt-450.jpeg 1x, ./images/merm-opt-450@2x.jpeg 2x" media="(max-width: 767px)" />
+                <img class="member__image" src="./images/merm-opt-450.jpeg" alt="Михаил Ермаков фото" />
+              </picture>
               <div class="member__description">
                 <h3 lang="ru" class="member__name">Михаил Ермаков</h3>
                 <p lang="en" class="member__area">UI Designer</p>
