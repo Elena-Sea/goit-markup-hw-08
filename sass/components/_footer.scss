@@ -34,6 +34,12 @@
 
 .footer-contacts {
 	text-align: center;
+	margin-bottom: 60px;
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 0;
+	}
+	
 	@media screen and (min-width: 768px) and (max-width: 1199px){
 		margin-right: 165px;
 	}
@@ -46,12 +52,6 @@
 }
 
 .address {
-	margin-bottom: 60px;
-
-	@media screen and (min-width: 1200px) {
-		margin-bottom: 0;
-	}
-
 	&__item:not(:last-child){
 		margin-bottom: 9px;
 	}
