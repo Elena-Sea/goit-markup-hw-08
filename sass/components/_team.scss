@@ -7,13 +7,11 @@
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		margin-top: -30px;
 		margin-right: -30px;
-		justify-content: center;
 		display: flex;
 		flex-wrap: wrap;
 	}
 
 	@media screen and (min-width: 1200px) {
-		justify-content: center;
 		display: flex;
 	}
 }
@@ -40,7 +38,7 @@
     	&:not(:last-child){
 			margin-right: 30px;
 		}
-		flex-basis: calc((100% - 30px * 4) / 4);
+		flex-basis: calc((100% - 30px * 3) / 4);
 	}
 
 	&__image {
@@ -49,7 +47,7 @@
 
 	&__description {
 		padding-top: 30px;
-		padding-bottom: 24px;	
+		padding-bottom: 30px;	
 	}
 
 	&__name {
