@@ -1695,10 +1695,17 @@ a {
   line-height: 1.87;
 }
 
-.product-description {
+.product-description__border {
   padding: 20px 24px;
+  width: 100%;
   border-right: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
+}
+
+.product-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .card-thumb {
